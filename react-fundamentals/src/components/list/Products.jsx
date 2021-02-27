@@ -6,7 +6,7 @@ export default (props) => {
     function getLines() {
         return products.map((product, key) => {
             return (
-                <tr key={ product.id } className={ key % 2 == 0 ? 'Odd' : '' }>
+                <tr key={ product.id } className={ key % 2 === 0 ? 'Odd' : '' }>
                     <td>{ product.id }</td>
                     <td>{ product.name }</td>
                     <td>$ { product.price.toFixed(2) }</td>
