@@ -4,6 +4,7 @@ import React from 'react'
 
 import First from './components/basics/First'
 import Parameter from './components/basics/Parameter'
+import Fragment from './components/basics/Fragment'
 
 ReactDOM.render(
     <div>
@@ -11,6 +12,7 @@ ReactDOM.render(
         <Parameter 
             title="Component" 
             subtitle="Funny" />
+        <Fragment />
     </div>,
     document.getElementById('root')
 )
