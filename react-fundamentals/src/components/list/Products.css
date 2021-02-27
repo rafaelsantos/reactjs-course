@@ -1,0 +1,11 @@
+.Products table {
+    width: 100%;
+}
+
+.Products th {
+    background-color: rgb(35, 185, 245);
+}
+
+.Products .Odd {
+    background-color: bisque;
+}

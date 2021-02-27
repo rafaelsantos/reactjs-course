@@ -8,6 +8,8 @@ import Root from './components/basics/Root'
 import Child from './components/basics/Child'
 
 import Card from './components/layout/Card'
+import List from './components/list/List'
+import Products from './components/list/Products'
 
 import './App.css'
 
@@ -45,6 +47,14 @@ export default () => {
                         <Child name="Item1" />
                         <Child name="Item2" />
                     </Root>
+                </Card>
+
+                <Card title="List">
+                    <List />
+                </Card>
+
+                <Card title="Products" color="#588C73">
+                    <Products />
                 </Card>
             </div>
         </div>
