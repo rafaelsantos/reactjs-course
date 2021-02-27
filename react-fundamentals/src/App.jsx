@@ -3,6 +3,7 @@ import React from 'react'
 import First from './components/basics/First'
 import Parameter from './components/basics/Parameter'
 import Fragment from './components/basics/Fragment'
+import Random from './components/basics/Random'
 
 //Can use export default function name(props)
 //Or can be anonym like export default function(props)
@@ -18,6 +19,7 @@ export default () => {
                 title="Component" 
                 subtitle="Funny" />
             <Fragment />
+            <Random min={2} max={35} />
         </div>
     )
 }
