@@ -16,6 +16,9 @@ import Products from './components/list/Products'
 import Conditional from './components/conditional/Conditional'
 import User from './components/conditional/User'
 
+import RootCommunication from './components/communication/DirectRoot'
+import RootIndirectCommunication from './components/communication/IndirectRoot'
+
 import './App.css'
 
 //Can use export default function name(props)
@@ -68,6 +71,14 @@ export default () => {
 
                 <Card title="User Check">
                     <User user={ { name: 'Rafael' } }/>
+                </Card>
+
+                <Card title="Direct Communication" color="#588C73">
+                    <RootCommunication />
+                </Card>
+
+                <Card title="Indirect Communication" color="#FA6900">
+                    <RootIndirectCommunication />
                 </Card>
             </div>
         </div>
