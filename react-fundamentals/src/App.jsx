@@ -8,8 +8,13 @@ import Root from './components/basics/Root'
 import Child from './components/basics/Child'
 
 import Card from './components/layout/Card'
+
 import List from './components/list/List'
+
 import Products from './components/list/Products'
+
+import Conditional from './components/conditional/Conditional'
+import User from './components/conditional/User'
 
 import './App.css'
 
@@ -55,6 +60,14 @@ export default () => {
 
                 <Card title="Products" color="#588C73">
                     <Products />
+                </Card>
+
+                <Card title="Conditional Rendering" color="#FA6900">
+                    <Conditional number={12} />
+                </Card>
+
+                <Card title="User Check">
+                    <User user={ { name: 'Rafael' } }/>
                 </Card>
             </div>
         </div>
