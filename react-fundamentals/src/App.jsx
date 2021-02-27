@@ -5,6 +5,7 @@ import Parameter from './components/basics/Parameter'
 import Fragment from './components/basics/Fragment'
 import Random from './components/basics/Random'
 import Root from './components/basics/Root'
+import Child from './components/basics/Child'
 
 import Card from './components/layout/Card'
 
@@ -39,8 +40,11 @@ export default () => {
                     <Random min={2} max={35} />
                 </Card>
 
-                <Card title="Children" color="#588C73">
-                    <Root status="OK" />
+                <Card title="Children" color="#FA6900">
+                    <Root status="OK">
+                        <Child name="Item1" />
+                        <Child name="Item2" />
+                    </Root>
                 </Card>
             </div>
         </div>
