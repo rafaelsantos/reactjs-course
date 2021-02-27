@@ -4,6 +4,7 @@ import First from './components/basics/First'
 import Parameter from './components/basics/Parameter'
 import Fragment from './components/basics/Fragment'
 import Random from './components/basics/Random'
+import Root from './components/basics/Root'
 
 import Card from './components/layout/Card'
 
@@ -36,6 +37,10 @@ export default () => {
                 
                 <Card title="Random Number" color="#588C73">
                     <Random min={2} max={35} />
+                </Card>
+
+                <Card title="Children" color="#588C73">
+                    <Root status="OK" />
                 </Card>
             </div>
         </div>
