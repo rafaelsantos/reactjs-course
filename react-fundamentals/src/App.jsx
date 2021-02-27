@@ -5,6 +5,10 @@ import Parameter from './components/basics/Parameter'
 import Fragment from './components/basics/Fragment'
 import Random from './components/basics/Random'
 
+import Card from './components/layout/Card'
+
+import './App.css'
+
 //Can use export default function name(props)
 //Or can be anonym like export default function(props)
 //Or can use arrow function like export default (props) => {}
@@ -12,14 +16,28 @@ import Random from './components/basics/Random'
 //Or can be use like export default _ => {}
 export default () => {
     return (
-        <div id="app">
+        <div className="App">
             <h1>React Fundamentals</h1>
-            <First></First>
-            <Parameter 
-                title="Component" 
-                subtitle="Funny" />
-            <Fragment />
-            <Random min={2} max={35} />
+
+            <div className="Cards">
+                <Card title="First component" color="#FA6900">
+                    <First></First>
+                </Card>
+
+                <Card title="Parameters">
+                    <Parameter 
+                        title="Component" 
+                        subtitle="Funny" />
+                </Card>
+
+                <Card title="Fragment" color="#E8B71A">
+                    <Fragment />
+                </Card>
+                
+                <Card title="Random Number" color="#588C73">
+                    <Random min={2} max={35} />
+                </Card>
+            </div>
         </div>
     )
 }
