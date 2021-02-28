@@ -19,6 +19,8 @@ import User from './components/conditional/User'
 import RootCommunication from './components/communication/DirectRoot'
 import RootIndirectCommunication from './components/communication/IndirectRoot'
 
+import Input from './components/form/Input'
+
 import './App.css'
 
 //Can use export default function name(props)
@@ -79,6 +81,10 @@ export default () => {
 
                 <Card title="Indirect Communication" color="#FA6900">
                     <RootIndirectCommunication />
+                </Card>
+
+                <Card title="Controlled Component">
+                    <Input />
                 </Card>
             </div>
         </div>
