@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './Counter.css'
+import Display from './Display'
+import Button from './Button'
+import Offset from './Offset'
 
 export default class Counter extends Component {
     state = {
@@ -13,10 +16,9 @@ export default class Counter extends Component {
         })
     }
 
-    changeOffset = (event) => {
+    changeOffset = (value) => {
         this.setState({
-            //+value - Convert to int
-            offset: +event.target.value
+            offset: value
         })
     }
 
@@ -24,12 +26,9 @@ export default class Counter extends Component {
         return (
             <div className="Counter">
                 <h2>Counter</h2>
-                <h3>Value: { this.state.number }</h3>
-                <div>
-                    <label htmlFor="offset">Offset:</label>
-                    <input id="offset" type="number" value={ this.state.offset } onChange={ this.changeOffset } /> 
-                </div>
-                <button onClick={ this.increment }>Inc</button>
+                <Display number={this.state.number} />
+                <Offset offset={ this.state.offset } changeOffset={ this.changeOffset } />
+                <Button increment={ this.increment } />
             </div>
         )
     }
