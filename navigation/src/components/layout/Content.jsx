@@ -8,6 +8,9 @@ import { Switch, Route } from 'react-router-dom'
 const Content = (props) => (
     <main className="Content">
         <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
             <Route path="/parameter/:id">
                 <Parameter />
             </Route>
@@ -16,9 +19,6 @@ const Content = (props) => (
             </Route>
             <Route path="/about">
                 <About />
-            </Route>
-            <Route path="/">
-                <Home />
             </Route>
         </Switch>
     </main>
