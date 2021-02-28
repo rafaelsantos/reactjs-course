@@ -21,6 +21,8 @@ import RootIndirectCommunication from './components/communication/IndirectRoot'
 
 import Input from './components/form/Input'
 
+import Counter from './components/counter/Counter'
+
 import './App.css'
 
 //Can use export default function name(props)
@@ -85,6 +87,10 @@ export default () => {
 
                 <Card title="Controlled Component">
                     <Input />
+                </Card>
+
+                <Card title="Counter" color="#588C73">
+                    <Counter number={0} />
                 </Card>
             </div>
         </div>
