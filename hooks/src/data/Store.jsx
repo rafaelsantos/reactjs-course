@@ -21,7 +21,7 @@ const Store = (props) => {
             number: state.number,
             text: state.text,
             setNumber: n => updateState('number', n),
-            setText: t => updateState('number', n)
+            setText: t => updateState('number', t)
         } }>
             { props.children }
         </AppContext.Provider>
