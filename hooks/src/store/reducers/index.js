@@ -1,4 +1,4 @@
-export default function reducer(state, action) {
+export function reducer(state, action) {
     switch(action.type) {
         case 'add2':
             return {...state, number: state.number + 2}
